@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.AboutUs"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="root" prefHeight="300.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.AboutUsController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="275.0" layoutX="70.0" layoutY="-52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/img/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="147.0" layoutY="126.0" prefHeight="16.0" prefWidth="113.0" text="About Text Vista" />
+      <Label layoutX="172.0" layoutY="142.0" text="Copyright" />
+      <Label layoutX="134.0" layoutY="158.0" text="Licence : MIT Licence" />
+      <Label layoutX="158.0" layoutY="174.0" text="Version: 1.0.0" />
+      <Label layoutX="111.0" layoutY="190.0" prefHeight="16.0" prefWidth="185.0" text="Created by : Nilan Dinushka" />
+      <Label layoutX="6.0" layoutY="217.0" prefHeight="16.0" prefWidth="406.0" text="Thank you for choosing Text Vista for your Writing endavors" />
+      <Label layoutX="143.0" layoutY="233.0" text="Happy Writing...!!!" />
+      <Label layoutX="136.0" layoutY="259.0" text="The Text Vista Team" />
+   </children>
 </AnchorPane>

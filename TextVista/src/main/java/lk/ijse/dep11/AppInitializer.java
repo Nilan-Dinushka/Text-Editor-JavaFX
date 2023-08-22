@@ -20,7 +20,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent splashRoot = FXMLLoader.load(getClass().getResource("/view/SceneLoading.fxml"));
+        AnchorPane splashRoot = FXMLLoader.load(getClass().getResource("/view/SceneLoading.fxml"));
         Scene splashScene = new Scene(splashRoot);
 
         // Create an undecorated stage for splash screen
@@ -40,7 +40,7 @@ public class AppInitializer extends Application {
                 splashStage.close();
 
                 // Load main window
-                Parent mainRoot = FXMLLoader.load(getClass().getResource("/view/MainForm.fxml"));
+                AnchorPane mainRoot = FXMLLoader.load(getClass().getResource("/view/MainForm.fxml"));
                 Scene mainScene = new Scene(mainRoot);
 
                 // Create a decorated stage for the main window

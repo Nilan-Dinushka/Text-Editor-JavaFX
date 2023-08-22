@@ -6,7 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -42,6 +45,18 @@ public class MainFormController {
     public void mnUserGuideOnAction(ActionEvent actionEvent) {
     }
 
-    public void mnAboutUsOnAction(ActionEvent actionEvent) {
+    public void mnAboutUsOnAction(ActionEvent actionEvent) throws Exception{
+        AnchorPane scene1Root = FXMLLoader.load(getClass().getResource("/view/AboutUs.fxml"));
+        Scene scene1 = new Scene(scene1Root);
+
+        Stage stage = new Stage();
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initOwner(root.getScene().getWindow());
+        stage.initStyle(StageStyle.TRANSPARENT);
+        //splashRoot.setBackground(Background.fill(Color.TRANSPARENT));
+        scene1.setFill(Color.TRANSPARENT);
+        stage.setScene(scene1);
+        stage.setTitle("About Us");
+        stage.show();
     }
 }
